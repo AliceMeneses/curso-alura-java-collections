@@ -2,6 +2,7 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class TestaListaDeAula {
 
@@ -20,7 +21,20 @@ public class TestaListaDeAula {
 		
 		Collections.sort(aulas);
 		
+		System.out.println();
+
+		
+		System.out.println("Ordenação pelo nome da aula:");
 		System.out.println(aulas);
+		
+		aulas.sort(Comparator.comparing(Aula::getTempo));
+		//Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
+		
+		System.out.println();
+
+		System.out.println("Ordenação pelo tempo de aula");
+		System.out.println(aulas);
+
 	}
 
 }
