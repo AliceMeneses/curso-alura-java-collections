@@ -26,4 +26,8 @@ public class Curso {
 		return aulas;
 	}
 	
+	public void adiciona(Aula aula) {
+		this.aulas.add(aula);
+	}
+	
 }
