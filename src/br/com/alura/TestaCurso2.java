@@ -1,5 +1,9 @@
 package br.com.alura;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 public class TestaCurso2 {
 
 	public static void main(String[] args) {
@@ -10,6 +14,14 @@ public class TestaCurso2 {
 		javaColecoes.adiciona(new Aula("Vector",5));
 		
 		System.out.println(javaColecoes.getAulas());
+		
+		List<Aula> aulasImutaveis = javaColecoes.getAulas(); 
+		
+		List<Aula> aulas = new ArrayList<>(aulasImutaveis);
+		
+		aulas.sort(Comparator.comparing(Aula::getTempo));
+		
+		System.out.println(aulas);
 		
 		
 	}
