@@ -23,6 +23,8 @@ public class TestaCurso2 {
 		
 		System.out.println(aulas);
 		
+		System.out.println("Duração Total do curso: " + javaColecoes.getTempoTotal() + "min");
+		
 		
 	}
 
