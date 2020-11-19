@@ -15,6 +15,11 @@ public class TestaAlunos {
 		alunos.add("Isa");
 		
 		System.out.println(alunos);
+		System.out.println();
+		
+		alunos.forEach((aluno) -> {
+			System.out.println(aluno);
+		});
 		
 	}
 
