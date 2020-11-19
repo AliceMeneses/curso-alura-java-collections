@@ -13,13 +13,17 @@ public class TestaAlunos {
 		alunos.add("Maria");
 		alunos.add("Julianne");
 		alunos.add("Isa");
-		
+				
 		System.out.println(alunos);
 		System.out.println();
 		
 		alunos.forEach((aluno) -> {
 			System.out.println(aluno);
 		});
+		
+		boolean inseriu = alunos.add("Alice Meneses");
+		
+		System.out.println("Inseriu? " + inseriu);
 		
 	}
 
