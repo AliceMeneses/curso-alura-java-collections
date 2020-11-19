@@ -24,6 +24,7 @@ public class TestaAlunos {
 		boolean inseriu = alunos.add("Alice Meneses");
 		
 		System.out.println("Inseriu? " + inseriu);
+		System.out.println("Quantidade de elementos armazenados na coleção: " + alunos.size());
 		
 	}
 
