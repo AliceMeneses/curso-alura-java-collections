@@ -1,7 +1,9 @@
 package br.com.alura;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 
 public class TestaAlunos {
 
@@ -25,6 +27,8 @@ public class TestaAlunos {
 		
 		System.out.println("Inseriu? " + inseriu);
 		System.out.println("Quantidade de elementos armazenados na coleção: " + alunos.size());
+		
+		List<String> listaAlunos = new ArrayList<>(alunos);
 		
 	}
 
