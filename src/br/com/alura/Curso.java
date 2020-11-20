@@ -38,6 +38,10 @@ public class Curso {
 		return aulas.stream().mapToInt(Aula::getTempo).sum();
 	}
 	
+	public void matricula(Aluno aluno) {
+		alunos.add(aluno);
+	}
+	
 	@Override
 	public String toString() {
 		return "Título do curso: " + this.nome + ", Duração total: " + this.getTempoTotal() + System.lineSeparator() + "Aulas do cuso: " + this.aulas;
