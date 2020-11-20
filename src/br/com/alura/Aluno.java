@@ -17,7 +17,9 @@ public class Aluno {
 		return numeroMatricula;
 	}
 	
-	
-	
+	@Override
+	public String toString() {
+		return "Aluno - Nome: " + this.getNome() + ", Número de Matricula: " + this.getNumeroMatricula();
+	}
 	
 }
