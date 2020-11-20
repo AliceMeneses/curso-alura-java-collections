@@ -10,6 +10,10 @@ public class TestaCursoComAluno {
 		javaColecoes.adiciona(new Aula("Diferença entre LinkedList e ArrayList", 15));
 		javaColecoes.adiciona(new Aula("Vector", 5));
 		
+		Aluno a1 = new Aluno("Alice", 7895);
+		Aluno a2 = new Aluno("Vitor", 5621);
+		Aluno a3 = new Aluno("Vini", 1257);
+		
 		
 	}
 
