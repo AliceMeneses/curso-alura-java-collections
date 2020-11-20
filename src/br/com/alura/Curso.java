@@ -2,13 +2,16 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 	
 	private String instrutor;
 	private String nome;
 	private List<Aula> aulas = new ArrayList<>();
+	private Set<Aluno> alunos = new HashSet<>();
 	
 	public Curso(String instrutor, String nome) {
 		this.instrutor = instrutor;
