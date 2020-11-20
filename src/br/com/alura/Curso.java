@@ -42,6 +42,10 @@ public class Curso {
 		alunos.add(aluno);
 	}
 	
+	public Set<Aluno> getAlunos(){
+		return Collections.unmodifiableSet(alunos);
+	}
+	
 	@Override
 	public String toString() {
 		return "Título do curso: " + this.nome + ", Duração total: " + this.getTempoTotal() + System.lineSeparator() + "Aulas do cuso: " + this.aulas;
