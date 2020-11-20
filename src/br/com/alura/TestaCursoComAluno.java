@@ -14,6 +14,9 @@ public class TestaCursoComAluno {
 		Aluno a2 = new Aluno("Vitor", 5621);
 		Aluno a3 = new Aluno("Vini", 1257);
 		
+		javaColecoes.matricula(a1);
+		javaColecoes.matricula(a2);
+		javaColecoes.matricula(a3);
 		
 	}
 
