@@ -46,6 +46,10 @@ public class Curso {
 		return Collections.unmodifiableSet(alunos);
 	}
 	
+	public boolean estaMatriculado(Aluno aluno) {
+		return alunos.contains(aluno);
+	}
+	
 	@Override
 	public String toString() {
 		return "Título do curso: " + this.nome + ", Duração total: " + this.getTempoTotal() + System.lineSeparator() + "Aulas do cuso: " + this.aulas;
