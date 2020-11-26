@@ -1,5 +1,7 @@
 package br.com.alura;
 
+import java.util.Iterator;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -21,6 +23,13 @@ public class TestaCursoComAluno {
 		javaColecoes.getAlunos().forEach((aluno) -> {
 			System.out.println(aluno);
 		});
+		
+		System.out.println();
+		System.out.println("Modo antigo de iterar um conjunto:");
+		Iterator<Aluno> iterador = javaColecoes.getAlunos().iterator();
+		while(iterador.hasNext()) {
+			System.out.println(iterador.next());
+		}
 		
 	}
 
