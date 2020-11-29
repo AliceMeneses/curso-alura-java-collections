@@ -2,8 +2,10 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Curso {
@@ -12,6 +14,7 @@ public class Curso {
 	private String nome;
 	private List<Aula> aulas = new ArrayList<>();
 	private Set<Aluno> alunos = new HashSet<>();
+	private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 	
 	public Curso(String instrutor, String nome) {
 		this.instrutor = instrutor;
@@ -40,6 +43,7 @@ public class Curso {
 	
 	public void matricula(Aluno aluno) {
 		alunos.add(aluno);
+		matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
 	}
 	
 	public Set<Aluno> getAlunos(){
@@ -54,4 +58,5 @@ public class Curso {
 	public String toString() {
 		return "Título do curso: " + this.nome + ", Duração total: " + this.getTempoTotal() + System.lineSeparator() + "Aulas do cuso: " + this.aulas;
 	}
+	
 }
