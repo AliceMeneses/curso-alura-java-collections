@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Curso {
@@ -57,6 +58,13 @@ public class Curso {
 	@Override
 	public String toString() {
 		return "Título do curso: " + this.nome + ", Duração total: " + this.getTempoTotal() + System.lineSeparator() + "Aulas do cuso: " + this.aulas;
+	}
+	
+	public Aluno buscaMatriculado(int matricula) {
+		if(!matriculaParaAluno.containsKey(matricula)) {
+			throw new NoSuchElementException("Essa matricula não existe: " + matricula); 
+		}
+		return matriculaParaAluno.get(matricula);
 	}
 	
 }
